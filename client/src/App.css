@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+  font-size: 16px;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.button {
+  margin: 0 auto 30px;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat > div:first-of-type {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.chat-messages .message {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.chat-messages .message:last-of-type {
+  margin-bottom: 0;
+}
+
+.chat-messages .message .message-info {
+  font-size: 60%;
+  margin-bottom: 10px;
+}
+
+.chat-messages .message .message-content {
+  background-color: #eee;
+  border-radius: 10px;
+  max-width: 90%;
+  width: auto;
+  padding: 10px;
+  display: inline-block;
+}
+
+.chat-messages .message.sender {
+  text-align: right;
+}
+
+.chat-messages .message.sender .message-content {
+  background-color:lightgreen;
+  text-align: left;
+}
+
+.message-input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.message-input-wrapper input {
+  flex-grow: 1;
+  border-radius: 0;
+  border: none;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.message-input-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.message-input-wrapper button {
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  appearance: none;
+  font-size: 20px;
+  height: 100%;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+}
